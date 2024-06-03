@@ -13,10 +13,15 @@ where hire_date like '%1986';
 select d.dept_no, d.dept_name, e.emp_no, e.last_name, e.first_name
 from employees e
 inner join dept_manager dm on e.emp_no = dm.emp_no
-inner join departments d on d.dept_no = dm.dept_no;
+inner join departments d on d.dept_no = dm.dept_no
+order by d.dept_no;
 
 -- List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
-
+select d.dept_no, d.dept_name, e.emp_no, e.last_name, e.first_name
+from employees e
+inner join dept_emp de on e.emp_no = de.emp_no
+inner join departments d on d.dept_no = de.dept_no
+order by d.dept_no;
 
 -- List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
 
