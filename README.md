@@ -1,4 +1,4 @@
-# Module 9 Challenge
+# Employee Database Research
 This repository contains files related to a research project about company employees during the 1980s and 1990s. The project started with six CSV files of employee data from that period. The `data` folder contains the original CSV files.
 
 The project designed tables to hold the data from the CSV files, import the CSV files into a PostgreSQL database and then queried the database to answer questions about the data.
